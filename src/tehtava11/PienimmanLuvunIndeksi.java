@@ -25,7 +25,7 @@ public class PienimmanLuvunIndeksi {
         while (true) {
             int syote = lukija.nextInt();
 
-            if (syote == -1) {
+            if (syote == 9999) {
                 break;
             } else {
                 luvut.add(syote);

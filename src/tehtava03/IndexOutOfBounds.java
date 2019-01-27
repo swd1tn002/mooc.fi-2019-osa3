@@ -19,7 +19,7 @@ import java.util.List;
  * -tutkimusryhmä. Tehtävä on lisensoitu on lisensoitu Creative Commons BY-NC-SA
  * 4.0 -lisenssillä ja se on julkaistu kurssilla https://ohjelmointi-19.mooc.fi.
  */
-public class IndexOutOfBoundsException {
+public class IndexOutOfBounds {
 
     public static void main(String[] args) {
         List<String> sanalista = new ArrayList<>();
