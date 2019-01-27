@@ -1,5 +1,9 @@
 package tehtava11;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Toteuta ohjelma, joka lukee käyttäjältä lukuja. Kun käyttäjä syöttää luvun
  * 9999, lukujen lukeminen lopetetaan. Ohjelma tulostaa tämän jälkeen pienimmän
@@ -12,4 +16,25 @@ package tehtava11;
  */
 public class PienimmanLuvunIndeksi {
 
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        List<Integer> luvut = new ArrayList<Integer>();
+
+        System.out.println("Syötä kokonaislukuja listalle (9999 lopettaa):");
+
+        while (true) {
+            int syote = lukija.nextInt();
+
+            if (syote == -1) {
+                break;
+            } else {
+                luvut.add(syote);
+            }
+        }
+        lukija.close();
+
+        System.out.println(); // Tyhjä rivi tulosteeseen
+
+        // TODO: Täydennä koodia tehtävänannon mukaisesti
+    }
 }

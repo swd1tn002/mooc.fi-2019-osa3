@@ -1,5 +1,8 @@
 package tehtava03;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Lista on erittäin hyödyllinen kun halutaan säilöä muuttujien arvoja myöhempää
  * käsittelyä varten. Sillä on myös helpohko tehdä virheitä.
@@ -18,4 +21,17 @@ package tehtava03;
  */
 public class IndexOutOfBoundsException {
 
+    public static void main(String[] args) {
+        List<String> sanalista = new ArrayList<>();
+
+        sanalista.add("Ensimmäinen");
+        sanalista.add("Toinen");
+
+        int kokonaispituus = 0;
+
+        for (int i = 0; i < sanalista.size(); i++) {
+            String sana = sanalista.get(i);
+            kokonaispituus += sana.length();
+        }
+    }
 }
