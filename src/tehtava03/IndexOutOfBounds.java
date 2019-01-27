@@ -1,4 +1,4 @@
-package tehtava03;
+package tehtava03; // Poista tämä rivi Viopessa!
 
 import java.util.ArrayList;
 import java.util.List;
